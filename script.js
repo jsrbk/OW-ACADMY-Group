@@ -2,8 +2,10 @@ var navTop = $("nav.navbar").offset().top;
 $(window).scroll(function () {
     var currentScroll = $(window).scrollTop();
     if ($(this).scrollTop()) {
+        $("nav.navbar").removeClass("no-bg");
         $("#back_to_top").fadeIn();
     } else {
+        $("nav.navbar").addClass("no-bg");
         $("#back_to_top").fadeOut();
     }
     if (Math.round($(this).scrollTop()) == $(document).height() - $(window).height()) {

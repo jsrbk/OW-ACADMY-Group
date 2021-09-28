@@ -10,6 +10,15 @@ footer {
     background-position-y: -100px;
 }
 
+.navbar {
+    transition: all .4s ease-in-out;
+}
+
+.no-bg {
+    background: linear-gradient(#000, transparent)!important;
+    padding: 40px 0;
+}
+
 .footer_menu a {
     color: white;
     text-decoration: none;
